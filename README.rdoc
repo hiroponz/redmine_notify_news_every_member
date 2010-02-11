@@ -1,0 +1,64 @@
+= notify_news_every_member
+
+== このプラグインについて
+
+このプラグインは、ニュースが追加されたことを通知するメールをプロジェクトの
+全メンバーに送信するようRedmineの動作を変更します。ニュースが追加されたこと
+をプロジェクトの全メンバーに確実に周知したい場合に利用します。
+
+Redmineでは、管理画面の「設定」=>「メール通知」で「ニュースが追加されました」
+チェックボックスをONにするとプロジェクトで新しいニュースが追加されたことを
+メンバーに通知することができます。しかし、通知対象となるメンバーは、「マイ
+アカウント」の「メール通知」が「参加しているプロジェクトの全てのチケット」
+に設定されているメンバーのみです。この項目はデフォルトでは「ウォッチまたは
+関係しているチケットのみ」となっているため、あえて設定を変更したメンバーに
+しかニュースが追加されたことを通知するメールはとどきません。
+
+このプラグインをインストールすることにより、各々のメンバーの「マイアカウン
+ト」の設定値とは無関係に、すべてのメンバーにニュースが追加されたことを通知
+するメールが送られるようになります。
+
+== 動作環境
+
+Redmine 0.9.2で動作を確認しました。
+
+== インストール方法
+
+RAILS_ROOT/vendor/plugin以下にファイルを展開しRedmineを再起動してください。
+
+展開後は次のようなディレクトリ構成となります。
+
+RAILS_ROOT/
+  |
+  +-vendor/
+      |
+      +-plugins/
+          |
+          +-redmine_notify_news_every_member/
+              |
+              +-lib/
+              +-test/
+
+== ライセンス
+
+The MIT License
+
+Copyright (c) 2010 hiroponz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
